@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="/images/icons8-dab-64.png">
+</head>
+<body>
+<nav>
+    <img src="images/icons8-dab-64.png" alt="" class="logo"> 
+    <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="sports.html">Sport</a></li>
+
+    </ul>
+    <button class="nav__btn">Get Started <img src="images/icons8-basketball-64.png" alt=""></button>
+
+    <img src="images/menu-removebg-preview.png" alt="" class="menu-icon" onclick ="toggleMenu()">
+</nav>
+<div class="header">
+    <div class="header-content">
+    <p>This Website is a digital hub showcasing your best work and professional skills.
+        Think of it as a curated gallery of my projects, tailored to my specific field. For a photographer, it might be a stunning visual feast of captivating images. For a writer, it could be a collection of compelling articles and blog posts. For a web designer, it's a playground of interactive design elements and captivating user interfaces.
+        But a portfolio website is more than just a showcase. It's also about telling my story. Use it to weave a narrative around your work, highlighting your unique process, values, and the impact me to create. Let my personality shine through, whether it's through playful animations, quirky illustrations, or a bold color palette.
+    </p>
+   
+
+    <img src="images/370312852_1717334525358728_5314897829256743692_n.jpg" width="500" height="500" alt="" class="user-img">
+</div>
+
+<script>
+    let navbar = document.querySelector('nav');
+    let menuLinks = document.getElementById("menu-links");
+
+    function toggleMenu(){
+        menuLinks.classList.toggle('show-menu');
+    }
+    window.onscroll = function(){
+        if(window.scrollY > 0){
+            navbar.style.background = '#eefff9' ;
+        }else{
+            navbar.style.background = 'transparent' ;
+        }
+    }
+</script>
+</body>
+</html>

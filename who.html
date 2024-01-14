@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="/images/icons8-dab-64.png">
+</head>
+<body>
+<nav>
+    <img src="images/icons8-dab-64.png" alt="" class="logo"> 
+    <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="sports.html">Sport</a></li>
+    </ul>
+    <button class="nav__btn">Get Started <img src="images/icons8-basketball-64.png" alt=""></button>
+
+    <img src="images/menu-removebg-preview.png" alt="" class="menu-icon" onclick ="toggleMenu()">
+</nav>
+<div class="header">
+    <div class="header-content">
+    <p>Hi! My name is Genard Gerson, I am Studying At University of Southern Mindanoa College 3yrs from now I hope that I will graduate in this course that i persue. I have a good relationship with my classmates and teachers as i am generally sociable in personality. I am thoughtful and helpful in our school. As for my Study, I pay Special Attention to the Development of my Thinking Manners so that I Become quick in Thinking and Broad in Knowledge. Addition I Love Playing Basketball and Badminton as a Matter of Fact I am a Varsity Player in our Community. Also I love Listening to the Romantic Musics its because it can make me calm and forget the stressful days that I Encountered.
+    </p>
+   
+
+    <img src="images/416101879_765741088760008_6930345076211650340_n.jpg" width="550" height="550" alt="" class="user-img">
+</div>
+
+<script>
+    let navbar = document.querySelector('nav');
+    let menuLinks = document.getElementById("menu-links");
+
+    function toggleMenu(){
+        menuLinks.classList.toggle('show-menu');
+    }
+    window.onscroll = function(){
+        if(window.scrollY > 0){
+            navbar.style.background = '#eefff9' ;
+        }else{
+            navbar.style.background = 'transparent' ;
+        }
+    }
+</script>
+</body>
+</html>

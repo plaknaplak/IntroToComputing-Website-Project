@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="/images/icons8-dab-64.png">
+</head>
+<body>
+<nav>
+    <img src="images/icons8-dab-64.png" alt="" class="logo"> 
+    <ul id="menu-links">
+        <li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="music.html">Music</a></li>
+<li><a href="sports.html">Sport</a></li>
+
+    </ul>
+    <button class="nav__btn">Get Started <img src="images/icons8-basketball-64.png" alt=""></button>
+
+    <img src="images/menu-removebg-preview.png" alt="" class="menu-icon" onclick ="toggleMenu()">
+</nav>
+<div class="header">
+    <div class="header-content">
+    <p>My hobbies are playing basketball, badminton, and any sports that are related through running. I love playing games like CODM or call of duty mobile, and mlbb or mobile legends bangbang.
+    </p>
+
+    <iframe width="100%" height="315" src="images/419721312_7218178124906630_7922292524953357952_n.mp4" frameborder="0" allowfullscreen></iframe>
+   
+   
+
+</div>
+
+<script>
+    let navbar = document.querySelector('nav');
+    let menuLinks = document.getElementById("menu-links");
+
+    function toggleMenu(){
+        menuLinks.classList.toggle('show-menu');
+    }
+    window.onscroll = function(){
+        if(window.scrollY > 0){
+            navbar.style.background = '#eefff9' ;
+        }else{
+            navbar.style.background = 'transparent' ;
+        }
+    }
+</script>
+</body>
+</html>
